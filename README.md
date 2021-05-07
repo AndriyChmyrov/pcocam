@@ -1,5 +1,5 @@
 # pcocam
-Matlab mex driver for PCO cameras (tested on Edge4.2)
+Matlab mex driver for PCO cameras (tested on Edge 4.2 and Edge 4.2 CLHS)
 
 Syntaxis:
 pcocam('setParameterCommand',value);
