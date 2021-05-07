@@ -16,7 +16,6 @@
 #include <mex.h>
 #include <mat.h>
 #include <math.h>
-//#include <PCO_errtext.h>
 #include <PCO_err.h>
 #include <sc2_SDKStructures.h>
 #include <sc2_common.h>
