@@ -41,8 +41,11 @@ result = pcocam('getParameterCommand');	% get Parameter value or get command out
 
 **Example:**
 ~~~Matlab
-pcocam('ExposureTime',0.1);
-exptime = pcocam('ExposureTime');
-pcocam('FrameCount',5);
-frames = pcocam('AcquireFrames')
+pcocam('ExposureTime',0.1);			% set camera exposure time
+exptime = pcocam('ExposureTime');	% get camera exposure time
+pcocam('FrameCount',5);				% tell camera to acquire 5 frames next time
+frames = pcocam('AcquireFrames')	% start image acquisition, wait until finished and return all frames as 3D array
+figure
+imagesc(rot90(frames(:,:,1),-1)) 	% display the first of the acquired frames
+axis image, colormap hot
 ~~~
