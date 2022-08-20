@@ -2,8 +2,10 @@
 Matlab mex driver for PCO Edge cameras (tested on Edge 4.2 and Edge 4.2 CLHS)
 
 Syntaxis:
-pcocam('setParameterCommand',value);
-result = pcocam('getParameterCommand');
+~~~Matlab
+pcocam('setParameterCommand',value); 	% set Parameter to value or execute command
+result = pcocam('getParameterCommand');	% get Parameter value or get command output
+~~~
 
 | Parameter/Commands:		| Call type |
 | :---						| :----:	|
@@ -38,7 +40,7 @@ result = pcocam('getParameterCommand');
 
 
 **Example:**
-~~~
+~~~Matlab
 pcocam('ExposureTime',0.1);
 exptime = pcocam('ExposureTime');
 pcocam('FrameCount',5);
