@@ -1,11 +1,11 @@
 # pcocam
-Matlab mex driver for PCO Edge cameras (tested on Edge 4.2 and Edge 4.2 CLHS)
+Matlab mex wrapper written in C/C++ (MS Visual Studio) for PCO Edge cameras (tested on Edge 4.2 and Edge 4.2 CLHS)
 
 Requires PCO SDK (SC2_Cam.lib and sc2*.h files)
 
 Syntaxis:
 ~~~Matlab
-pcocam('setParameterCommand',value); 	% set Parameter to value or execute command
+pcocam('setParameterCommand',value); 	% set Parameter to provided value or execute command
 result = pcocam('getParameterCommand');	% get Parameter value or get command output
 ~~~
 
@@ -45,7 +45,7 @@ result = pcocam('getParameterCommand');	% get Parameter value or get command out
 ~~~Matlab
 pcocam('ExposureTime',0.1);        % set camera exposure time
 exptime = pcocam('ExposureTime');  % get camera exposure time
-pcocam('FrameCount',5);	           % tell camera to acquire 5 frames next time
+pcocam('FrameCount',5);	           % prepare camera to acquire 5 frames next time
 frames = pcocam('AcquireFrames')   % start image acquisition, wait until finished and return all frames as 3D array
 figure
 imagesc(rot90(frames(:,:,1),-1))   % display the first of the acquired frames
