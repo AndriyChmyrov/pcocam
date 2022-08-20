@@ -1,5 +1,5 @@
 # pcocam
-Matlab mex wrapper written in C/C++ (MS Visual Studio) for PCO Edge cameras (tested on Edge 4.2 and Edge 4.2 CLHS)
+Matlab MEX wrapper written in C/C++ (MS Visual Studio) for PCO Edge cameras (tested on Edge 4.2 and Edge 4.2 CLHS)
 
 Requires PCO SDK (SC2_Cam.lib and sc2*.h files)
 
