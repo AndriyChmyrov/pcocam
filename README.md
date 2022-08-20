@@ -1,5 +1,6 @@
 # pcocam
 Matlab mex driver for PCO Edge cameras (tested on Edge 4.2 and Edge 4.2 CLHS)
+
 Requires PCO SDK (SC2_Cam.lib and sc2*.h files)
 
 Syntaxis:
