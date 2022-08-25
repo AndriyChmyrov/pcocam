@@ -359,7 +359,7 @@ mxArray* getParameter(const char* name)
 
 		UINT8* pointer;
 		pointer = static_cast<UINT8*>(mxGetData(output));
-		size_t bytesToCopy = cameraStates[camera - 1].ImageSizeBytes * cameraStates[camera - 1].NumberOfFramesReceived;
+		size_t bytesToCopy = cameraStates[camera - 1].ImageSizeBytes * static_cast<DWORD>(cameraStates[camera - 1].NumberOfFramesReceived);
 		memcpy(pointer, cameraStates[camera - 1].ImageBuffer, bytesToCopy);
 
 		CleanBufferWatcher();

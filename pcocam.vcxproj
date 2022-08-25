@@ -58,14 +58,14 @@
       <PreprocessorDefinitions>_DEBUG;PCOCAM_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>C:\Program Files\MATLAB\R2021a\extern\include;C:\Program Files %28x86%29\PCO Digital Camera Toolbox\pco.sdk\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Program Files\MATLAB\R2022a\extern\include;C:\Program Files %28x86%29\PCO Digital Camera Toolbox\pco.sdk\include</AdditionalIncludeDirectories>
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
-      <AdditionalLibraryDirectories>C:\Program Files\MATLAB\R2021a\extern\lib\win64\microsoft;C:\Program Files %28x86%29\PCO Digital Camera Toolbox\pco.sdk\lib64</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Program Files\MATLAB\R2022a\extern\lib\win64\microsoft;C:\Program Files %28x86%29\PCO Digital Camera Toolbox\pco.sdk\lib64</AdditionalLibraryDirectories>
       <ModuleDefinitionFile>pcocam.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
@@ -78,7 +78,7 @@
       <PreprocessorDefinitions>NDEBUG;PCOCAM_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>C:\Program Files\MATLAB\R2021a\extern\include;C:\Program Files %28x86%29\PCO Digital Camera Toolbox\pco.sdk\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Program Files\MATLAB\R2022a\extern\include;C:\Program Files %28x86%29\PCO Digital Camera Toolbox\pco.sdk\include</AdditionalIncludeDirectories>
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>
     <Link>
@@ -87,7 +87,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
-      <AdditionalLibraryDirectories>C:\Program Files\MATLAB\R2021a\extern\lib\win64\microsoft;C:\Program Files %28x86%29\PCO Digital Camera Toolbox\pco.sdk\lib64</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Program Files\MATLAB\R2022a\extern\lib\win64\microsoft;C:\Program Files %28x86%29\PCO Digital Camera Toolbox\pco.sdk\lib64</AdditionalLibraryDirectories>
       <ModuleDefinitionFile>pcocam.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>

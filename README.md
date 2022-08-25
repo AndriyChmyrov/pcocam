@@ -46,8 +46,13 @@ result = pcocam('getParameterCommand');	% get Parameter value or get command out
 pcocam('ExposureTime',0.1);        % set camera exposure time
 exptime = pcocam('ExposureTime');  % get camera exposure time
 pcocam('FrameCount',5);	           % prepare camera to acquire 5 frames next time
-frames = pcocam('AcquireFrames')   % start image acquisition, wait until finished and return all frames as 3D array
+frames = pcocam('AcquireFrames')   % starts image acquisition, waits until finished and returns all frames as 3D array
 figure
 imagesc(rot90(frames(:,:,1),-1))   % display the first of the acquired frames
 axis image, colormap hot
+%
+pcocam('TriggerMode',2);           % set camera to "external exposure start & software" trigger mode
+pcocam('AcquisitionStart');        % starts the acquisition, but the camera is waiting for the external trigger
+% start triggering
+frames = pcocam('AcquisitionStop') % stops the acquisition and returns the acquired frames as 3D array [x,y,frame_number]
 ~~~
